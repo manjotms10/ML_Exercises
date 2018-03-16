@@ -9,7 +9,6 @@ from sklearn import datasets
 from random import shuffle
 
 def load_dataset():
-    np.random.seed(0)
     X = datasets.load_iris().data
     y = datasets.load_iris().target
     W1 = np.random.randn(50,4)
@@ -129,7 +128,6 @@ def main():
     plt.xlabel("#Iterations")
     plt.ylabel("Loss")
     plt.plot(loss)
-    print(a4[:, 72:74])
     plt.show()
 
 if __name__=='__main__':
